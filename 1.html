@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tunapark.com</title>
+    <meta charset="utf-8">
+    <style>
+     a {text-decoration: none; color : black; }
+     h1 {font-size : 40px; text-align : center; margin : 0px; border-bottom : 2px solid blue ; padding: 30px; color : blue}
+     #night_day { display : grid; grid-template-columns : 1fr 1fr;}
+     #category { color : blue; text-decoration: none; display : grid; grid-template-columns: 1fr 1fr 1fr; padding-top: 10px; text-align: center;
+       padding-bottom: 10px; border-bottom :2px solid blue ;}
+     #gridthree { display : grid; grid-template-columns: 1fr 1fr 1fr ;}
+     h2 {font-size : 20px; margin-top : 100px; }
+    </style>
+
+  </head>
+  <body>
+    <input id="night_day" type="button" value="night" onclick="
+     if (document.querySelector('#night_day').value === 'night') {
+       document.querySelector('body').style.backgroundColor = 'black';
+       document.querySelector('body').style.color = 'white';
+       document.querySelector('#night_day').value = 'day'
+     } else {
+       document.querySelector('body').style.backgroundColor = 'white';
+       document.querySelector('body').style.color = 'black';
+       document.querySelector('#night_day').value = 'night'
+     }">
+
+    <h1><a href="index.html" style="color:blue";>TUNAPARK</a></h1>
+    <div id="category">
+      <span><a href="1.html" style="color:blue"; >CAREER</a> </span>
+      <span><a href="2.html" style="color:blue"; >IMAGE</a> </span>
+      <span><a href="3.html" style="color:blue"; >TEXT</a> </span>
+    </div>
+    <div id="gridthree">
+      <span class="blank1"> </span>
+      <span class="content"}>
+        <h2>참치 Park</h2>
+        <div>-2017 small creator group <다시> 영상연출</div>
+        <div>-2017 단편영화 <과학탐구보고서> 동시녹음</div>
+        <div>-2017 서강연극회 <타오르는 어둠속에서> 음향</div>
+        <div><a href="https://www.youtube.com/channel/UCPBxpbQeHiMkaUGZ9W7s_Vg" target="_blank" title="이달의 미디어 아트">
+          -2018 small creator group <이달의 미디어 아트> 작가</a></div>
+        <div>-2018 Art & Technology Conference 아티스트</div>
+        <div>-2018 지식융합학부 학생회 ‘Blossom’ 아텍 학과 부대표</div>
+        <div>-2018 Art & Technology Open House 총괄</div>
+        <div>-2019 극단 얼추신난다 <사랑과 돈> 배우</div>
+        <div>-2019 단편영화 <잔물결> 편집</div>
+        <div><a href="https://www.facebook.com/ATCsogang/" target="_blank" title="ATCsogang">
+          -2019 Art & Technology Conference 큐레이터</a></div>
+        <div><a href="https://movie.daum.net/moviedb/main?movieId=136359" target="_blank" title="서울무용영화제 최우수작 영화 <공차적응>">
+          -2019 서울무용영화제 최우수작 영화 <공차적응> 우주복 디자이너</a></div>
+        <div><a href="https://www.artcollider.kr/programs/production/창작-지원-2019-playful-media/showcase-2019-playing-the-future" target="_blank" title="한예종 창작지원 작품 <void draw()>">
+          -2019 한국예술종합학교 융합예술센터 창작지원 작품선정 “void draw()”</a></div>
+      </span>
+      <span class="blank2"> </span>
+    </div>
+
+  </body>
+</html>
